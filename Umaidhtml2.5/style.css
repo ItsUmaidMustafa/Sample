@@ -1,0 +1,115 @@
+body{
+    margin: 0 auto;
+    /*padding: 0 ;*/
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 50vh; /*View port height */
+}
+
+
+/*portfolio*/
+
+.grid-wrapper{
+    display:grid;
+    grid-template-columns: 
+      repeat(auto-fill,minmax(300px,1fr));
+      grid-gap:20px;
+}
+
+.box{
+    background-color: #555;
+    padding: 50px;
+    margin: 20px;
+}
+
+.box > img{
+    width: 100%;
+    height: 100%;
+}
+
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
+    cursor:pointer;
+  /*  display:inline-block;*/
+    color:#fff;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+/*Navigation bar */
+.main-nav{
+   display:flex; /*flex and css grid we align contents*/ 
+   list-style:none;
+   font-size:0.7em;
+   font-family: arial;
+   margin: 0;
+}
+
+                                @media only screen and (max-width:600px)
+                                {
+                                        .main-nav
+                                        {
+                                            font-size:0.5em;
+                                            padding:0;
+
+
+                                        }
+
+                                }
+
+
+
+    .right{
+        margin-left:auto;
+    }                            
+
+li{
+    padding:20px;
+
+}
+
+a{
+    color:#f5f6f5;
+     text-decoration:none; 
+}
+
+
+/*Slider // Bar*/
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+
+
+
+
+
+
+.green{
+    background: #669999;
+    }
+.red{
+    background: #C655BE;
+    }
+.yellow{
+    background: #F3AAAA;
+    }
+
+.blue{
+    background: #7abcff;     }
